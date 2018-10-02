@@ -1,0 +1,41 @@
+name:                hx2018-prereq
+version:             0.1.0.0
+github:              "githubuser/hx2018-prereq"
+license:             BSD3
+author:              "Ben Clifford"
+maintainer:          "benc@cqx.ltd.uk"
+copyright:           "2018 Ben Clifford"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/githubuser/booking#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+
+executables:
+  check-tutorial:
+    main:                Main.hs
+    source-dirs:         check-tutorial
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - aeson
+    - servant-server
+    - stm
+    - text
+    - warp
+    default-extensions:
+    - DataKinds
+    - TypeOperators
+    - OverloadedStrings
