@@ -15,7 +15,7 @@ https://docs.haskellstack.org/en/stable/README/#how-to-install
 2. Get this repository onto your laptop. For example:
 
 ```
-$ git clone https://github.com/benclifford/hx2018.git
+$ git clone https://github.com/benclifford/hx2018-prereq.git
 ```
 
 3. Build the pre-requisites test code:
